@@ -1,1 +1,1 @@
-# webProject
+# Django web project study
