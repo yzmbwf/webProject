@@ -1,0 +1,105 @@
+<!doctype html public "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="gb2312">
+<head>
+    <meta charset="utf-8">
+    <title>二级树形菜单示例：CSS TreeMenu</title>
+    <style type="text/css" media="all">
+a,a:visited {color:#333;text-decoration:none;}
+a:hover {color:#f60;}
+body,td {font:13px "Geneva","宋体", "Arial", "Helvetica",sans-serif;}
+ul,li {margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;}
+h1 {padding:5px;color:#900;font:16px bold "Geneva","宋体", "Arial", "Helvetica",sans-serif;}
+h1 small {font-size:11px;font-weight:normal;color:#660;}
+.TreeWrap {width:200px;}
+.MenuBox .titBox a,
+.MenuBox .titBox a:visited,
+.MenuBox2 .titBox a,
+.MenuBox2 .titBox a:visited {margin-left:10px;padding-left:40px;color:#003;font-size:12px;display:block;}
+.MenuBox .titBox h3 a {background:url(images/ico_folder_open.gif) no-repeat 0 40%;}
+.MenuBox .titBox h3.Fst a {background:url(images/ico_folder_open_fst.gif) no-repeat 0 40%;}
+.MenuBox .titBox h3.Lst a {background:url(images/ico_folder_open_lst.gif) no-repeat 0 40%;}
+.MenuBox2 .titBox h3 a {background:url(images/ico_folder.gif) no-repeat 0 40%;}
+.MenuBox2 .titBox h3.Fst a {background:url(images/ico_folder_fst.gif) no-repeat 0 40%;}
+.MenuBox2 .titBox h3.Lst a {line-height:250%;background:url(images/icon_exit.gif) no-repeat 0 0;}
+.MenuBox2 .txtBox {display:none;}
+.MenuBox .txtBox ul li {padding-left:65px;line-height:150%;}
+.MenuBox .txtBox .num {color:#e00;}
+.MenuBox .txtBox ul {background:url(images/line_y.gif) repeat-y 16px 0;}
+.MenuBox .txtBox ul li {background:url(images/t.gif) no-repeat 28px 50%;}
+.MenuBox .txtBox ul li.Lst {background:url(images/t_lst.gif) no-repeat 28px 50%;}
+
+    </style>
+    <script type="text/javascript">
+ <!--
+ function ExChgClsName(Obj,NameA,NameB){
+ var Obj=document.getElementById(Obj)?document.getElementById(Obj):Obj;
+ Obj.className=Obj.className==NameA?NameB:NameA;
+ }
+ function showMenu(iNo){
+ ExChgClsName("Menu_"+iNo,"MenuBox","MenuBox2");
+ }
+-->
+
+    </script>
+</head>
+<body>
+<h1>CSS TreeMenu
+    <small>By 枫岩@IECN.Net</small>
+</h1>
+<div class="TreeWrap">
+    <div class="MenuBox" id="Menu_0">
+        <div class="titBox"><h3 class="Fst"><a href="javascript:showMenu(0);">同事</a></h3></div>
+        <div class="txtBox">
+            <ul>
+                <li><a href="#">Dodo</a></li>
+                <li><a href="#">小春</a></li>
+                <li><a href="#">小林</a></li>
+                <li><a href="#">小龙</a></li>
+                <li class="Lst"><a href="#">枫岩</a></li>
+            </ul>
+        </div>
+    </div><!--MenuBox-->
+    <div class="MenuBox2" id="Menu_1">
+        <div class="titBox"><h3><a href="javascript:showMenu(1);">客户</a></h3></div>
+        <div class="txtBox">
+            <ul>
+                <li><a href="#">Dodo</a></li>
+                <li><a href="#">小春</a></li>
+                <li><a href="#">小林</a></li>
+                <li><a href="#">小龙</a></li>
+                <li class="Lst"><a href="#">枫岩</a></li>
+            </ul>
+        </div>
+    </div><!--MenuBox-->
+    <div class="MenuBox2" id="Menu_2">
+        <div class="titBox"><h3><a href="javascript:showMenu(2);">朋友</a></h3></div>
+        <div class="txtBox">
+            <ul>
+                <li><a href="#">Dodo</a></li>
+                <li><a href="#">小春</a></li>
+                <li><a href="#">小林</a></li>
+                <li><a href="#">小龙</a></li>
+                <li class="Lst"><a href="#">枫岩</a></li>
+            </ul>
+        </div>
+    </div><!--MenuBox-->
+    <div class="MenuBox2" id="Menu_3">
+        <div class="titBox"><h3><a href="javascript:showMenu(3);">家人</a></h3></div>
+        <div class="txtBox">
+            <ul>
+                <li><a href="#">Dodo</a></li>
+                <li><a href="#">小春</a></li>
+                <li><a href="#">小林</a></li>
+                <li><a href="#">小龙</a></li>
+                <li class="Lst"><a href="#">枫岩</a></li>
+            </ul>
+        </div>
+    </div><!--MenuBox-->
+    <div class="MenuBox2">
+        <div class="titBox"><h3 class="Lst"><a href="#">退出系统</a></h3></div>
+    </div><!--MenuBox-->
+</div>
+</body>
+</html>

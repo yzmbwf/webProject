@@ -1,0 +1,25 @@
+body{
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#b8c4cb), to(#f6f6f8));
+	background-attachment: fixed;	
+}
+.reg{
+	margin: 20px 10px 5px 20px;
+}
+.reg label{
+	margin-left: 10px;
+	margin: 10px 10px 5px 8px;
+}
+.reg input{
+	width: 200px;
+	height: 20px;
+	margin: 10px 10px 5px 0px;
+}
+.reg #user,#pw{
+	margin-left: 28px;	
+}
+.butn #sub,#res{
+	margin-left: 30px;
+	width: 80px;
+	height: 30px;
+	margin-top: 20px;
+}

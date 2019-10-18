@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>接口UI测试管理系统</title>
+		<link rel="stylesheet" href="/static/common.css" />
+		<link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<script src="/static/common.js"></script>
+		<link rel="icon" href="/static/images/favicon.ico" type="images/x-icon" />
+	</head>
+	<body>
+		<div class="navigation">
+			<div class="m_left left">
+				<span id="titl">自动化测试平台</span>
+				<a href="#" class="m">
+					<i class="fa fa-graduation-cap" aria-hidden="true"></i> <!--i标签相当于span-->
+				</a>
+			</div>
+			<div class="men left">
+				<a href="#" class="menu">项目概况</a>
+				<a href="#" class="menu">Host配置</a>
+				<a href="#" class="menu">API接口</a>
+				<a href="#" class="menu">自动化测试</a>
+				<a href="#" class="menu">测试报告</a>
+				<a href="#" class="menu">系统设置</a>
+				<a href="#" class="menu">关于我们</a>	
+			</div>
+			<div class="login_user right">
+				<a>
+					<span>{{user_name}}</span>
+					<i class="fa fa-angle-down" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="user right">
+				<a>
+					<img  src="/static/images/headport.jpg" id="image"/>
+				</a>
+				<div class="logout">
+					<a href="#">我的资料</a>
+					<a href="#">注销</a>
+				</div>
+			</div>
+			<div class="right bell">
+				<i class="fa fa-bell-o" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="page-centent">
+			<div class="left_area">
+				<div class="directory-structure">
+					<ul class="dire">
+						<li class="el-menu-item" style="font-size:30px;">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-television" aria-hidden="true"></i>
+							<span>首页</span>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-university" aria-hidden="true"></i>
+							<span>项目管理</span>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-plug" aria-hidden="true"></i>
+							<span>接口管理</span>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-lemon-o" aria-hidden="true"></i>
+							<span>Appium测试</span>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-gg-circle" aria-hidden="true"></i>
+							<span>环境管理</span>
+						</li>
+						<li class="el-menu-item">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+							<span>用户管理</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="center_area">
+				<div class="con1">
+					<a class="firmenu">接口管理</a>
+				</div>
+				<div class="con2">
+					<a class="menu2">接口配置</a>
+					<a class="menu2">用例</a>
+					<a class="menu2">执行</a>
+					<a class="menu2">报告</a>
+				</div>
+				<div class="middle-content">
+					<div class="zj_search clear">
+						<span>
+							<span>
+								<button class="btn_workflow button">
+									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+									创建接口配置
+								</button>
+							</span>
+							<span>
+								<button class="btn_workflow button">
+									<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+									上传接口用例
+								</button>
+							</span>
+							<span>
+								<button class="btn_workflow button">
+									<i class="fa fa-eye" aria-hidden="true"></i>
+									查看接口列表
+								</button>
+							</span>
+						</span>
+					</div>
+					<div class="navigation-cont">
+						<div class="navigation-setting">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

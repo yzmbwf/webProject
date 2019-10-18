@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test </title>
+		<link rel="stylesheet" href="/static/login.css" />
+		<script src="/static/common.js"></script>
+		<link rel="icon" href="/static/images/favicon.ico" type="images/x-icon" />
+	</head>
+	<body style="margin: auto;background-image: url(/static/images/login3.jpg);">
+		<div class="titl">接口UI测试管理平台</div>
+		<div class="login_bor">
+			<div class="enry_bor">
+				<form action="/login" method="post">
+					<div class="user_id">
+						<label for="user">账 号:</label>
+						<input onfocus="focu();" onblur="blurs();" type="text" name="username" id="user" value="请输入用户名" /><br />
+						<!--<input type='text' placeholder="请输入用户名" />,写这句文本框直接有默认值和鼠标事件--> 
+					</div>
+					<div class="pwd_id">
+						<label for="pwd">密 码:</label>
+						<input type="text" name="passwd" id="pwd"  value="请输入密码" onfocus="focuspwd();" onblur="blurpwd();" /><br/>
+						<span style="color:red">{{error_msg}}</span>
+					</div>
+					<div class="butn">
+						<span>--------------<a href="/register" target="_blank">立即注册>>></a>--------------</span><br />
+						<input type="reset" value="重置" />
+						<input type="submit" value="登录" onclick="login();"/>
+					</div>
+				</form>
+				<div class="pw">
+					<p onclick="ForgotPwd();">忘记密码?</p>
+				</div>
+			</div>
+		</div>
+		<div id="mk" class="mask hide"></div>
+		<div id="bc" class="bounced hide">
+			<div class="bj">
+				<form action="#" method="post">
+					<p>
+						<label for="us">请先输入用户名:</label>
+						<input type="text" id="us" name="upuser" class="n2" /><br>
+					</p>
+					<p>
+						<label for="new_p">新密码:</label>
+						<input type="password" id="new_p" name="new_pwd" class="n2"/><br>
+					</p>
+					<p>
+						<label for="new_p2">确认密码:</label>
+						<input type="password" id="new_p2" name="new_pwd2" class="n2"/><br>
+					</p>
+					<div class="btn">
+						<input type="submit" value="确定" onclick="sub();"/>
+						<input type="button" value="取消" onclick="cancelup();" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

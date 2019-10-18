@@ -1,0 +1,215 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-width:768px;
+    max-width:100%;
+    height:100%;
+}
+*{margin:0;padding:0}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+a{
+	text-decoration: none;    /*去掉超链接下划线*/
+}
+.navigation{
+	position: absolute;
+	background-color: #20a0ff;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	line-height: 50px;  /*居中显示*/
+}
+.navigation .m_left{
+	width: 200px;
+	height: 50px;
+	margin: -3px;
+}
+.navigation .m_left #titl{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 宋体;
+	margin: 5px;
+}
+.m{
+	font-size: 30px;
+	margin: -3px 0 -5px;
+}
+.navigation .menu{
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	color: white;
+}
+.navigation .menu:hover{
+	background-color: #0000FF;
+	color: #000000;
+}
+.bell{
+	color: white;
+	font-size: 18px;
+	/* margin-right: 10px; */
+}
+.user{
+	position: relative;
+	width: 60px;
+	height: 50px;
+	/* margin-right: 10px; */
+	/* background-color: red; */
+}
+.user a img{
+	height: 40px;
+	width: 40px;
+	margin-top: 5px;
+	border-radius: 50%;
+	cursor: pointer; /*鼠标小手*/
+	margin-left: 12px;
+}
+.logout{
+	position: absolute;
+	top: 48px;
+	right: -8px;
+	background-color: #fcfcfd;
+	height: 80px;
+	width: 100px;
+	z-index: 20;
+	border-radius: 8px;
+	display: none;
+}
+.user:hover .logout{
+	display: block;
+}
+.logout a{
+	display: block;
+	line-height: 30px;
+	margin: 6px 6px 5px;
+	font-size: 16px;
+}
+.logout a:hover{
+	color: white;
+	background-color: #00B2EE;
+}
+.login_user{
+	/* position: relative; */
+	right: 0;
+	height: 50px;
+	margin-right: 30px;
+}
+.login_user a{
+	color: white;
+}
+.login_user a:hover{
+	/* color: blue; */
+}
+.page-centent .left_area{
+	position: absolute;   /*第一次也可以固定在某一个位置*/
+	top: 51px;
+	/* background-color: #F5F5F5; */
+	left: 0;
+	bottom: 0;
+	width: 15%;
+	overflow: auto;
+	background-color:rgb(10, 54, 91);
+	color:rgb(173, 201, 234);
+	font-size:16px;
+}
+.left_area p{
+	margin: 0;
+}
+.el-menu-item:hover{
+    color:rgb(173, 201, 234);
+    background-color:rgb(8, 43, 73);
+    cursor: pointer;
+}
+.page-centent .center_area{
+	position: absolute;
+	top: 50px;
+	left: 15%;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	z-index: 9;
+	background-color:#D1EEEE;
+}
+.second-menu{
+    font-size:14px;
+}
+.center_area .con1{
+	background-color: white;
+	height:50px;
+	line-height: 50px;
+    float:left;
+    width:10%;
+    min-width:5%;
+}
+.center_area .con2{
+	background-color: white;
+	height:50px;
+	line-height: 50px;
+    float:right;
+    width:89.8%;
+}
+.center_area .con1 .firmenu{
+    font-size:17px;
+    margin-left:20px;
+}
+.center_area .con2 .menu2{
+    font-size:17px;
+    margin-left:30px;
+    cursor: pointer;
+}
+.middle-content{
+    background-color:white;
+    margin-top:55px;
+    margin-left:15px;
+    border-radius: 3px;
+    width:100%;
+    height:500px;
+    margin-bottom:1%;
+}
+.dire li{
+    list-style: none;
+    line-height:50px;
+    padding-left:10%;
+}
+.zj_search .btn_workflow{
+    margin-top:20px;
+    margin-left:25px;
+}
+.btn_workflow{
+    height:30px;
+    line-height:30px;
+    padding:0 5px;
+    background:#2bbaee;
+    border:0;
+    color:#fff;
+    border-radius:4px;
+    cursor: pointer;
+}
+.navigation-cont{
+    box-sizing:border-box;
+    border:1px solid #ddd;
+    border-bottom:none;
+    margin-top:10px;
+    margin-left:25px;
+    height:auto!important;
+    height:470px;
+
+}
+.navigation-setting{
+    width:34%;
+    box-sizing:border-box;
+    border:1px solid #ddd;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+    height:439px;
+    background-color:#f8f8f8;
+    overflow:hidden;
+}
+
+

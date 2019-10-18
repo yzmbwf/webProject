@@ -1,0 +1,138 @@
+.titl{
+	margin-top: 150px;
+	margin-bottom: 20px;
+	font-size: 32px;
+	letter-spacing:5px; /*字体间距*/
+	color: #00BFFF;
+	font-family: "楷体";
+	font-weight: bold;  /*字体加粗*/
+	text-align: center; /*字体居中*/
+}
+.login_bor{
+	/* border: 2px solid #00868B; */
+	background-color:#00B2EE;
+	opacity:0.5;               /*设置背景颜色和透明度*/
+	border-radius: 20px;      /*边框圆角化*/
+	height: 300px;
+	width: 600px;
+	margin-top: auto; /* div居中*/
+	margin-left: auto; /* 自适应居中在屏幕中央*/
+	margin-right: auto;
+}
+.enry_bor{
+	height: 280px;
+	width: 500px;
+	margin-bottom: 140;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+label {
+	font-weight: bold;
+	font-family: "宋体";
+	font-size: 22px;
+}
+.user_id{
+	padding-left: 60px;
+	padding-top: 70px;
+	margin: 5px 5px 8px 10px; /*外边距上、右、下、左，按顺时针方向设置*/
+}
+.pwd_id{
+	padding-left: 60px;
+	padding-top: 15px;
+	margin: 6px 5px -10px 10px;
+}
+.user_id input,.pwd_id input{
+	width: 220px;
+	height: 20px;
+	padding-top: 5px;
+	line-height: 20px;
+}
+.butn{
+	height: 40px;
+	width: 400px;
+	margin: 28px 23px 8px 100px;
+}
+.butn input{
+	width: 80px;
+	height: 30px;
+	margin: 15px 6px 20px 30px;
+	border: 1px solid white;
+	font-weight: bold; /*字体加粗*/
+	color: black;
+}
+.pw{
+	font-size: 12px;
+	padding-left: 400px;
+	padding-top: 30px;
+	cursor: pointer;
+}
+.pw p{
+	color: #0000FF;
+	font-size: 14px;
+	font-family: '宋体';
+}
+a{
+	text-decoration: none;  /*去掉超链接下划线*/
+	color: #0000FF;
+	font-size: 14px;
+	font-family: '宋体';
+}
+.hide{
+	display: none;
+}
+.mask{
+	background-color: black;
+	position: fixed;
+	opacity: 0.5;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:9;
+}
+.bounced{
+	background-color: white;
+	position: fixed;
+	height: 400px;
+	width: 700px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left:-350px ;
+	z-index:10;
+	border-radius: 15px;   //边框圆角化,这行要放在z-index下面
+}
+.bj{
+	margin-top: 80px;
+	margin-left: 60px;
+	height: 280px;
+	width: 500px;
+	/* border: 1px dotted red; */
+	line-height: 1.5; /*div里面的上下间距*/
+}
+.bj label{
+	cursor: pointer;  //鼠标小手状态
+	padding: 3px 6px;
+	font-size: 18px;
+	text-align: left;
+	width: 150px;
+	margin-left: 20px;
+}
+.bj .n2{
+	margin-right: 120px;
+	float: right;	
+	height: 20px;
+	width: 200px;
+}
+.btn input{
+	height: 35px;
+	width: 110px;
+	margin: 50px -90px 0 110px;
+	border-radius: 10px;
+	background-color: #00B2EE;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
